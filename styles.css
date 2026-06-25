@@ -259,6 +259,14 @@ section{position:relative;}
 .mini-list strong{color:var(--ink);font-weight:900;}
 .mini-dot{width:7px;height:7px;border-radius:50%;background:var(--blue);margin-top:8px;flex-shrink:0;}
 
+.also-row{margin-top:50px;padding-top:34px;border-top:2px solid var(--line);}
+.also-label{
+  font-family:var(--font-body);font-weight:900;font-size:.82rem;letter-spacing:.03em;
+  text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:20px;
+}
+.mini-list-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:0;}
+.mini-list-grid li{font-size:.94rem;}
+
 /* tip cards (erreurs expliquées) */
 .tip-card{
   background:var(--paper);border:2px solid var(--line);border-radius:var(--radius-md);
@@ -379,6 +387,7 @@ section{position:relative;}
   .audience-grid{grid-template-columns:1fr;}
   .privacy-grid{grid-template-columns:1fr;}
   .func-grid{grid-template-columns:1fr;}
+  .mini-list-grid{grid-template-columns:1fr;gap:16px;}
   .footer-top{grid-template-columns:1fr 1fr;gap:32px;}
 }
 @media (max-width: 600px){
