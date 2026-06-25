@@ -84,14 +84,6 @@ section{position:relative;}
 .squiggle{position:relative;display:inline-block;}
 .squiggle svg{position:absolute;left:0;bottom:-10px;width:100%;height:12px;}
 
-/* ---------- grid-paper texture (discret) ---------- */
-.grid-paper{
-  background-image:
-    linear-gradient(rgba(0,24,87,.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,24,87,.045) 1px, transparent 1px);
-  background-size:26px 26px;
-}
-
 /* ---------- header ---------- */
 .site-header{
   position:sticky;top:0;z-index:50;
@@ -239,8 +231,9 @@ section{position:relative;}
 .chain-figure{
   border-radius:var(--radius-md);overflow:hidden;border:2.5px solid var(--navy);
   box-shadow:var(--shadow-soft);background:#fff;
+  aspect-ratio:6/5;display:flex;align-items:center;justify-content:center;
 }
-.chain-figure img{width:100%;display:block;}
+.chain-figure img{width:100%;height:100%;object-fit:contain;display:block;}
 .chain-cap{font-size:.98rem;color:var(--ink-soft);line-height:1.5;font-weight:700;}
 .chain-cap strong{color:var(--ink);font-weight:900;}
 .chain-arrow{display:flex;align-items:center;justify-content:center;color:var(--blue);padding-top:60px;}
