@@ -371,7 +371,8 @@ section{position:relative;}
 @media (max-width: 920px){
   .main-nav{display:none;}
   .showcase, .showcase.reverse{grid-template-columns:1fr;gap:32px;}
-  .showcase.reverse .showcase-figure{order:0;}
+  .showcase-text{order:1;}
+  .showcase-figure, .showcase.reverse .showcase-figure{order:2;}
   .chain{grid-template-columns:1fr;}
   .chain-arrow{display:none;}
   .honesty-card{grid-template-columns:1fr;padding:36px 26px;}
