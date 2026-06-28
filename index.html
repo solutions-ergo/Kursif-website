@@ -353,6 +353,359 @@
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
+          <li><a href="support.html">Aide</a></li>
+          <li><a href="mailto:support@kursif.app">support@kursif.app</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SE Développement — tous droits réservés.</span>
+      <span>SASU au capital de 1 000 € — RCS Lille Métropole 999 711 922</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // before / after demo toggle
+  (function(){
+    var btnBefore = document.getElementById('btnBefore');
+    var btnAfter = document.getElementById('btnAfter');
+    var textBefore = document.getElementById('textBefore');
+    var textAfter = document.getElementById('textAfter');
+    function showBefore(){
+      btnBefore.classList.add('is-on'); btnAfter.classList.remove('is-on');
+      textBefore.classList.remove('is-hidden'); textAfter.classList.add('is-hidden');
+    }
+    function showAfter(){
+      btnAfter.classList.add('is-on'); btnBefore.classList.remove('is-on');
+      textAfter.classList.remove('is-hidden'); textBefore.classList.add('is-hidden');
+    }
+    btnBefore.addEventListener('click', showBefore);
+    btnAfter.addEventListener('click', showAfter);
+  })();
+
+</script>
+
+</body>
+</html>    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <span class="eyebrow">Ton assistant cognitif</span>
+        <p class="hero-tagline">Lire. Comprendre. Écrire. Apprendre.</p>
+        <h1>Faire des fautes n'est pas une fatalité</h1>
+        <p class="hero-sub">Kursif corrige, explique, lit à voix haute et met en forme n'importe quel texte ou cahier photographié — sans prise de tête. Pensé pour les élèves dys, leurs enseignants et leurs parents, sur iPad.</p>
+        <div class="hero-cta-row">
+          <span class="badge-soon"><span class="pulse"></span> Bientôt sur l'App Store</span>
+          <a class="btn btn-primary" href="mailto:support@kursif.app?subject=Liste%20d%27attente%20Kursif&body=Bonjour%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%C2%B7e%20du%20lancement%20de%20Kursif.">Préviens-moi !</a>
+        </div>
+      </div>
+
+      <!-- interactive before/after demo -->
+      <div class="demo-card">
+        <div class="demo-bar">
+          <span class="demo-bar-label">Juge par toi-même</span>
+          <div class="toggle-pair" role="group" aria-label="Avant ou après correction">
+            <button type="button" id="btnBefore" class="is-on">Avant</button>
+            <button type="button" id="btnAfter">Après</button>
+          </div>
+        </div>
+        <div class="demo-body">
+          <p class="demo-text before" id="textBefore">la révolussion francèse a comanssé en 1789 parske le peuble étai tré mécontan des privilèje de la noblaisse et du clergé. bokou de gens avai du mal a se nourir et devai payé dé zimpot tré élevé alor que lé plus riche en payai trè peu.</p>
+          <p class="demo-text after is-hidden" id="textAfter">La révolution française a commencé en 1789 parce que le peuple était très mécontent des privilèges de la noblesse et du clergé. Beaucoup de gens avaient du mal à se nourrir et devaient payer des impôts très élevés alors que les plus riches en payaient très peu.</p>
+        </div>
+        <p class="demo-foot">Vrai texte, vraie correction — d'autres exemples dans <a href="#corriger">la section Corriger</a>.</p>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Zéro compte à créer</div>
+        <div class="trust-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg> Tout est chiffré, rien gardé pour rien</div>
+        <div class="trust-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg> Pensé pour l'iPad, fait en France</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHAINE PEDAGOGIQUE ============ -->
+  <section class="section" id="fonctionnalites">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Transformer</span>
+        <h2>Une photo de cahier.<br>Un cours nickel.<br>Plus besoin de déchiffrer.</h2>
+      </div>
+
+      <div class="chain">
+        <div class="chain-step">
+          <span class="chain-num"><span class="n">1</span> Ton cahier, en photo</span>
+          <div class="chain-figure"><img src="assets/photo-cahier.jpeg" alt="Photo d'un cahier d'élève écrit à la main, prise avec l'appareil photo de l'iPad"></div>
+          <p class="chain-cap">Même manuscrit, même un peu en bazar. On s'en occupe.</p>
+        </div>
+        <div class="chain-arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        <div class="chain-step">
+          <span class="chain-num"><span class="n">2</span> Et hop, mis en forme</span>
+          <div class="chain-figure"><img src="assets/screenshot-mef-apres.jpg" alt="Résultat de la fonction Mettre en forme : cours structuré avec titres rouge et vert, et bouton Créer un texte à trous"></div>
+          <p class="chain-cap"><strong>Mettre en forme</strong> structure tout, avec des titres colorés — et propose direct de transformer ça en <strong>texte à trous</strong>.</p>
+        </div>
+        <div class="chain-arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        <div class="chain-step">
+          <span class="chain-num"><span class="n">3</span> Direction Word</span>
+          <div class="chain-figure"><img src="assets/screenshot-export-word.jpg" alt="Le même cours collé dans Word, avec les titres colorés conservés"></div>
+          <p class="chain-cap">Collé dans Word, Pages ou OneNote, sans rien casser. Promis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIRE ============ -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="showcase">
+        <div class="showcase-text">
+          <span class="eyebrow">Comprendre</span>
+          <h3 style="margin-top:14px;">Lire, sans s'arracher les cheveux</h3>
+          <p>Un même texte, écouté à voix haute avec le mot lu surligné, ou colorié par syllabes, phonèmes, voyelles ou lignes. Un seul écran, deux façons de s'en sortir.</p>
+        </div>
+        <div class="showcase-figure"><img src="assets/screenshot-lire-couleur.jpg" alt="Texte sur la photosynthèse colorié par syllabes et phonèmes en violet et vert dans la fonction Lire"></div>
+      </div>
+
+      <div class="also-row">
+        <span class="also-label">Et aussi, dans Comprendre</span>
+        <ul class="mini-list mini-list-grid">
+          <li><span class="mini-dot"></span><span><strong>Expliquer</strong> — « Il t'explique tes devoirs. Il ne les fait pas — désolé. » Reformule une consigne ou une notion, jamais l'exercice à ta place.</span></li>
+          <li><span class="mini-dot"></span><span><strong>Dictionnaire</strong> donne la définition et un exemple d'un mot ou d'une expression.</span></li>
+          <li><span class="mini-dot"></span><span><strong>Traduire</strong> traduit dans la langue de ton choix, avec lecture audio dans cette langue.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CORRIGER ============ -->
+  <section class="section" id="corriger">
+    <div class="wrap">
+      <div class="showcase reverse">
+        <div class="showcase-figure"><img src="assets/screenshot-corriger-erreurs.jpg" alt="Capture de la fonction Corriger affichant les erreurs expliquées avec des astuces pédagogiques"></div>
+        <div class="showcase-text">
+          <span class="eyebrow">Écrire</span>
+          <h3 style="margin-top:14px;">Il corrige tes fautes sans te faire la leçon</h3>
+          <p>Pas juste un texte propre balancé sans explication. Pour chaque erreur retenue, une astuce pour ne plus la refaire — histoire que ça serve aussi la prochaine fois.</p>
+          <div class="tip-card">
+            <div class="tip-fix">privilege <span class="arrow">→</span> <span class="after">privilèges</span></div>
+            <p>Quand tu parles de plusieurs choses, n'oublie pas de mettre un « s » à la fin pour montrer que c'est au pluriel.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-fix">paye <span class="arrow">→</span> <span class="after">paient</span></div>
+            <p>Pour « ils/elles », le verbe « payer » devient « paient ». C'est un peu spécial, mais c'est comme ça !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOUTES LES FONCTIONS ============ -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">14 fonctions, un seul écran</span>
+        <h2>Tout ce que Kursif sait faire<br>(oui, tout ça)</h2>
+        <p>Rangées en quatre familles claires, depuis l'écran d'accueil — pas un labyrinthe de menus.</p>
+      </div>
+
+      <div class="func-categories">
+        <div>
+          <span class="func-cat-label">Écrire</span>
+          <div class="func-grid">
+            <div class="func-card">
+              <div class="func-icon" style="background:#E8F0FE;color:#225EFA;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+              <div><h4>Corriger</h4><p>Orthographe, grammaire, ponctuation, avec option erreurs expliquées.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#E6F6EC;color:#1C7A4D;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-2.6-6.3L21 8"/><path d="M21 3v5h-5"/></svg></div>
+              <div><h4>Réécrire</h4><p>Clarifier et améliorer un texte sans en changer le fond.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="func-cat-label">Comprendre</span>
+          <div class="func-grid">
+            <div class="func-card">
+              <div class="func-icon" style="background:#FCEFE3;color:#E8893A;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.5h6c0-1.2.4-1.9 1-2.5A6 6 0 0 0 12 2Z"/></svg></div>
+              <div><h4>Expliquer</h4><p>Reformule une consigne ou une notion, sans faire l'exercice à ta place.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#E5F6F4;color:#1C9C8E;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></div>
+              <div><h4>Dictionnaire</h4><p>Définition et exemple d'un mot ou d'une expression.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#E8F0FE;color:#225EFA;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5 6 9H2v6h4l5 4Z"/><path d="M19 8a6 6 0 0 1 0 8M16 10a3 3 0 0 1 0 4"/></svg></div>
+              <div><h4>Lire</h4><p>Lecture audio surlignée, ou lecture en couleur par syllabes, phonèmes, voyelles ou lignes.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#E5F6F4;color:#1C9C8E;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z"/></svg></div>
+              <div><h4>Traduire</h4><p>Traduit dans la langue choisie, avec lecture audio dans cette langue.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="func-cat-label">Transformer</span>
+          <div class="func-grid">
+            <div class="func-card">
+              <div class="func-icon" style="background:#F1ECFB;color:#8B5FCE;font-family:var(--font-display);font-size:1rem;">Aa</div>
+              <div><h4>Mettre en forme</h4><p>Structure, titres colorés, paragraphes — avec insertion d'images.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#F1ECFB;color:#8B5FCE;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></svg></div>
+              <div><h4>Séquencer</h4><p>Décompose une consigne complexe en étapes simples.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#FCEFE3;color:#E8893A;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg></div>
+              <div><h4>Résumer</h4><p>Garde l'essentiel d'un texte long.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#F1ECFB;color:#8B5FCE;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2h6l1 3H8z"/><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 11h6M9 15h6"/></svg></div>
+              <div><h4>Fiche synthèse</h4><p>Les points clés d'un cours, structurés pour réviser.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="func-cat-label">Créer</span>
+          <div class="func-grid">
+            <div class="func-card">
+              <div class="func-icon" style="background:#FCEFE3;color:#E8893A;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h6m4 0h6M4 17h10"/></svg></div>
+              <div><h4>Texte à trous</h4><p>Généré depuis un texte ou un cours, en gardant sa mise en forme.</p></div>
+            </div>
+            <div class="func-card">
+              <div class="func-icon" style="background:#E8F0FE;color:#225EFA;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div><h4>Évaluation</h4><p>QCM, vrai/faux et questions ouvertes, combinables, en nombre proportionné au texte.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HONNETETE ============ -->
+  <section class="section" id="honnetete">
+    <div class="wrap">
+      <div class="honesty-card">
+        <div>
+          <span class="eyebrow on-dark">Ce que tu dois savoir</span>
+          <h2>Ce qu'on ne sait pas (encore) faire</h2>
+          <p>Un schéma compliqué, une carte mentale, un circuit ? On n'invente pas un résultat juste pour avoir l'air malin. On te le dit, cash.</p>
+          <span class="schema-chip">[SCHÉMA NON TRANSCRIT]</span>
+        </div>
+        <div class="honesty-aside">
+          <span class="label">Et sinon</span>
+          <p>Kursif aide à lire, écrire et comprendre. Il ne remplace pas un enseignant, un orthophoniste ou un accompagnement humain — il leur file juste un coup de main.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POUR QUI ============ -->
+  <section class="section section-alt" id="pour-qui">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Pour qui ?</span>
+        <h2>Trois usages, un seul outil</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="tag">Élève</span>
+          <h3>Lire et écrire sans s'épuiser</h3>
+          <p>Un cours imbuvable devient lisible, une rédaction se corrige sans attendre, et chaque erreur s'accompagne d'une astuce pour progresser.</p>
+        </div>
+        <div class="audience-card">
+          <span class="tag">Enseignant</span>
+          <h3>Adapter un support, vite</h3>
+          <p>Une photo de cours devient un support structuré, puis un texte à trous ou une évaluation — sans tout reconstruire à la main un dimanche soir.</p>
+        </div>
+        <div class="audience-card">
+          <span class="tag">Parent</span>
+          <h3>Aider, sans tout refaire</h3>
+          <p>De quoi accompagner les devoirs sans être expert·e, en gardant un œil sur ce que Kursif explique — et ce qu'il ne fait jamais à la place de l'enfant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONFIDENTIALITE ============ -->
+  <section class="section" id="confidentialite">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Vie privée</span>
+        <h2>Tes données, on n'y touche pas</h2>
+        <p>Le détail complet est dans notre <a href="confidentialite.html" style="color:var(--blue);font-weight:800;">politique de confidentialité</a>.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Aucun compte à créer</h4><p>Tes réglages et ton historique restent sur ton appareil, jamais sur un serveur central.</p></div>
+        </div>
+        <div class="privacy-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Transmission chiffrée</h4><p>Le texte ou l'image soumis à une fonction est chiffré, traité, puis non conservé au-delà du nécessaire.</p></div>
+        </div>
+        <div class="privacy-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Zéro pub, zéro tracking</h4><p>Pas de localisation, pas de profil publicitaire, pas de revente de données.</p></div>
+        </div>
+        <div class="privacy-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><h4>Sous-traitants encadrés</h4><p>Un accord de traitement des données encadre l'usage de l'API OpenAI pour les fonctions d'intelligence artificielle.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="wrap">
+      <span class="badge-soon" style="margin-bottom:22px;"><span class="pulse"></span> Bientôt sur l'App Store</span>
+      <h2>Allez, on te prévient dès que c'est dispo ?</h2>
+      <p>Pas de spam, pas de liste revendue — juste un mail le jour&nbsp;J.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="mailto:support@kursif.app?subject=Liste%20d%27attente%20Kursif&body=Bonjour%2C%20je%20souhaite%20%C3%AAtre%20pr%C3%A9venu%C2%B7e%20du%20lancement%20de%20Kursif.">Préviens-moi !</a>
+        <a class="btn btn-ghost" href="https://instagram.com/kursif.app" target="_blank" rel="noopener">On se suit ? @kursif.app</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#top" class="footer-brand"><img src="assets/logo-navy.png" alt="Logo Kursif"> Kursif</a>
+        <p class="footer-tag">Ton assistant cognitif pour lire, écrire et comprendre. Fait à Lille, avec beaucoup de café, par SE Développement.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Produit</h5>
+        <ul>
+          <li><a href="#fonctionnalites">Ça fait quoi ?</a></li>
+          <li><a href="#pour-qui">Pour qui ?</a></li>
+          <li><a href="https://instagram.com/kursif.app" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Légal</h5>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgu-cgv.html">CGU-CGV</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
           <li><a href="mailto:support@kursif.app">support@kursif.app</a></li>
         </ul>
       </div>
