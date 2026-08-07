@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accès pro gratuit — Kursif</title>
+<meta name="description" content="Orthophoniste ou ergothérapeute ? Reçois un an d'accès gratuit à Kursif.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #001857;
+    --text: #10172A;
+    --muted: #4A5170;
+    --bg: #FAFBFF;
+    --accent: #225EFA;
+    --border: #E2E5F0;
+    --card: #FFFFFF;
+    --error: #C0392B;
+    --success-bg: #EAF6EC;
+    --success-text: #1E6B33;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  header.site-header {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  header.site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Chewy', 'Nunito', sans-serif;
+    font-size: 22px;
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .brand img { height: 28px; width: 28px; }
+  .back-link {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  main { padding: 56px 0 80px; }
+
+  .eyebrow {
+    display: block;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: 'Chewy', 'Nunito', sans-serif;
+    font-weight: 400;
+    color: var(--navy);
+    font-size: 42px;
+    line-height: 1.15;
+    text-align: center;
+    margin: 0 0 18px;
+  }
+  .intro {
+    max-width: 620px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+  }
+  .intro strong { color: var(--text); }
+
+  .card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 36px;
+    box-shadow: 0 20px 50px -30px rgba(0, 24, 87, 0.25);
+  }
+
+  form .field { margin-bottom: 20px; }
+  form .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 560px) {
+    form .row-2 { grid-template-columns: 1fr; }
+  }
+  label {
+    display: block;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .hint {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: var(--text);
+    padding: 12px 14px;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    background: #fff;
+    outline: none;
+    transition: border-color .15s ease;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+  }
+  textarea { resize: vertical; min-height: 80px; }
+
+  .radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  .radio-pill {
+    flex: 1;
+    position: relative;
+  }
+  .radio-pill input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    cursor: pointer;
+  }
+  .radio-pill span {
+    display: block;
+    text-align: center;
+    padding: 11px 10px;
+    border: 2px solid var(--border);
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--muted);
+    transition: all .15s ease;
+  }
+  .radio-pill input:checked + span {
+    border-color: var(--navy);
+    background: var(--navy);
+    color: #fff;
+  }
+  .radio-pill input:focus-visible + span {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* honeypot, hidden from real people */
+  .hp-field {
+    position: absolute;
+    left: -5000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .btn-submit {
+    width: 100%;
+    margin-top: 6px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    background: var(--navy);
+    border: 2.5px solid var(--navy);
+    border-radius: 999px;
+    padding: 15px 26px;
+    cursor: pointer;
+    transition: opacity .15s ease;
+  }
+  .btn-submit:hover { opacity: 0.9; }
+  .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+  .btn-submit:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  .form-error {
+    background: #FDEDEC;
+    border: 1px solid #F5C6C0;
+    color: var(--error);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .privacy-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    max-width: 480px;
+    margin: 22px auto 0;
+  }
+  .privacy-note a { color: var(--accent); }
+
+  .success-card {
+    text-align: center;
+  }
+  .success-card .check {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: var(--success-bg);
+    color: var(--success-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  .success-card h2 {
+    font-family: 'Chewy', 'Nunito', sans-serif;
+    font-weight: 400;
+    color: var(--navy);
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
+  .success-card p { color: var(--muted); font-size: 15px; }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html#top" class="brand"><img src="assets/logo.png" alt="Logo Kursif"> Kursif</a>
+    <a href="index.html#top" class="back-link">← Retour au site</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Pour les pros qui accompagnent des élèves dys</span>
+    <h1>Un an de Kursif offert, pour toi</h1>
+    <p class="intro">
+      Tu es <strong>orthophoniste</strong> ou <strong>ergothérapeute</strong> ? On t'offre un an d'accès complet
+      à Kursif, gratuitement. Remplis ce petit formulaire, on vérifie ton numéro RPPS, et tu reçois ton code
+      d'accès par email.
+    </p>
+
+    <div class="card" id="cardWrap">
+      <form id="accesForm" novalidate>
+        <div class="form-error" id="formError"></div>
+
+        <div class="field row-2">
+          <div>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+          </div>
+          <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <p class="hint">C'est à cette adresse qu'on t'enverra ton code d'accès.</p>
+        </div>
+
+        <div class="field">
+          <label for="profession">Profession</label>
+          <select id="profession" name="profession" required>
+            <option value="" disabled selected>Choisis ta profession</option>
+            <option value="Orthophoniste">Orthophoniste</option>
+            <option value="Ergothérapeute">Ergothérapeute</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="field hidden" id="professionAutreWrap">
+          <label for="professionAutre">Précise ta profession</label>
+          <input type="text" id="professionAutre" name="professionAutre">
+        </div>
+
+        <div class="field">
+          <label for="lieuExercice">Lieu d'exercice</label>
+          <input type="text" id="lieuExercice" name="lieuExercice" placeholder="Ville ou structure (cabinet, établissement...)" required>
+        </div>
+
+        <div class="field">
+          <label>Mode d'exercice</label>
+          <div class="radio-group" role="radiogroup" aria-label="Mode d'exercice">
+            <label class="radio-pill">
+              <input type="radio" name="modeExercice" value="Libéral" required>
+              <span>Libéral</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="modeExercice" value="Salarié" required>
+              <span>Salarié</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rpps">Numéro RPPS</label>
+          <input type="text" id="rpps" name="rpps" inputmode="numeric" placeholder="11 chiffres" required>
+          <p class="hint">Visible sur ta carte CPS ou sur annuaire.sante.fr — on l'utilise juste pour vérifier ton statut, rien d'autre.</p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message (facultatif)</label>
+          <textarea id="message" name="message" placeholder="Une précision à ajouter ? On te lit."></textarea>
+        </div>
+
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Ne remplis pas ce champ</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">Envoyer ma demande</button>
+      </form>
+
+      <div class="success-card hidden" id="successCard">
+        <div class="check">✓</div>
+        <h2>C'est envoyé !</h2>
+        <p>
+          On vérifie ta demande et tu reçois ton code d'accès par email dans les prochains jours.
+          Merci pour ce que tu fais au quotidien.
+        </p>
+      </div>
+    </div>
+
+    <p class="privacy-note">
+      Ces informations servent uniquement à vérifier ton statut professionnel et à t'envoyer ton
+      code d'accès. Elles ne sont ni vendues ni partagées. Détails sur notre
+      <a href="index.html#confidentialite">page vie privée</a>.
+    </p>
+  </div>
+</main>
+
+<script>
+(function () {
+  const API_URL = "https://kursif-backend.vercel.app/api/demandeaccespro";
+
+  const form = document.getElementById("accesForm");
+  const professionSelect = document.getElementById("profession");
+  const professionAutreWrap = document.getElementById("professionAutreWrap");
+  const formError = document.getElementById("formError");
+  const submitBtn = document.getElementById("submitBtn");
+  const successCard = document.getElementById("successCard");
+
+  professionSelect.addEventListener("change", function () {
+    professionAutreWrap.classList.toggle("hidden", professionSelect.value !== "Autre");
+  });
+
+  function showError(msg) {
+    formError.textContent = msg;
+    formError.style.display = "block";
+  }
+  function clearError() {
+    formError.style.display = "none";
+    formError.textContent = "";
+  }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    clearError();
+
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    if (!data.prenom || !data.nom || !data.email || !data.profession ||
+        !data.lieuExercice || !data.modeExercice || !data.rpps) {
+      showError("Merci de remplir tous les champs obligatoires.");
+      return;
+    }
+
+    const rppsDigits = (data.rpps || "").replace(/\s+/g, "");
+    if (!/^\d{11}$/.test(rppsDigits)) {
+      showError("Le numéro RPPS doit comporter 11 chiffres.");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi en cours...";
+
+    try {
+      const res = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, rpps: rppsDigits }),
+      });
+      const json = await res.json();
+
+      if (!res.ok || !json.ok) {
+        showError(json.result || "Une erreur est survenue. Réessaie dans un instant.");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Envoyer ma demande";
+        return;
+      }
+
+      form.classList.add("hidden");
+      successCard.classList.remove("hidden");
+    } catch (err) {
+      showError("Impossible d'envoyer le formulaire pour le moment. Réessaie dans un instant.");
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Envoyer ma demande";
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
